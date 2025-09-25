@@ -31,7 +31,7 @@ Resources:
         SSEEnabled: true # Enable server-side encryption for the table
       Tags:
         - Key: "Project"
-          Value: !Sub "HotelApp-${Environment}" 
+          Value: !Sub "${HotelName}-${Environment}-2" 
   # Sample Alarm - we will use this later to prove AWS CodePipeline Condition Gates
 
   DynamoDBReadCapacityAlarm:
